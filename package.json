@@ -1,0 +1,26 @@
+{
+    "name": "weather-mcp",
+    "version": "2.0.0",
+    "description": "AI-powered weather analysis. Fetches and analyzes weather data, compares conditions between locations, and generates safety recommendations using LLMs.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "lint": "eslint src/ index.js",
+        "format": "prettier --write \"src/**/*.js\" \"*.js\""
+    },
+    "keywords": ["weather", "analysis", "mcp", "ai-agent", "safety", "forecast"],
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "latest",
+        "axios": "^1.6.8",
+        "openai": "^4.73.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.6.0",
+        "jest": "^30.4.2",
+        "prettier": "^3.9.4"
+    }
+}

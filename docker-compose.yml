@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    weather-mcp:
+        build: .
+        ports:
+            - "8018:8018"
+        environment:
+            - NODE_ENV=production
